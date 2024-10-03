@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>Home</title>
+  <link rel="stylesheet" href="home.css">
+  
+</head>
+
+<body>
+  
+  
+  
+  <header>
+    <div class="header">
+      <img src="logo.png" alt="logo" width="200" >
+      
+         <div class="navbar">
+            
+            <a href="home.html">Home</a>
+            <a href="houseN.html">Coming Soon</a>
+            <a href="Blog Page/Blog Page/index.html">Blog</a>
+            <a href="Contact Page/Contact Page/index.html">Contact</a>
+            
+            <div class="dropdown">
+              <button class="dropbtn">Products Catigories 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="grocery.html">Fruits and Vegetables</a>
+              
+                <a href="grocery.html">Dairy and Poultry</a>
+                <a href="grocery.html">Drinks</a>
+                <a href="grocery.html">Snacks</a>
+                <a href="houseN.html">Home Necessities</a>
+                <a href="grocery.html">Spices</a>
+                <a href="grocery.html">Lentil & Flour</a>
+
+              </div>
+            
+              
+            </div></div>
+            </div>
+           
+</header>
+
+
+
+<!--slideshow-->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="home images/4.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="home images/Different-types-of-spices-of-the-table-apr18.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="home images/5.jpg" style="width:100%">
+  </div>
+    
+    <div class="mySlides fade">
+      <img src="home images/6.jpg" style="width:100%"> 
+    </div>
+
+      <div class="mySlides fade">
+        <img src="home images/7.webp" style="width:100%"> 
+      </div>
+      <div class="mySlides fade">
+        <img src="home images/8.jpg" style="width:100%"> 
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script>
+    /* javascript for slideshow*/
+  
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <br>
+
+  <h2 style="font-size: xx-large; 
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;text-decoration: underline;">CATAGORIES</h2>
+
+  <!--meat product box-->
+  <div > 
+  <div class="row">
+    <div class="column">
+      <br>
+       <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-decoration: underline;">Meat Products</h3>
+       <br>
+        <p style="text-align: justify; word-spacing: 10%; line-height: 2;"> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, nihil consectetur maiores harum blanditiis nulla culpa non , numquam nisi  tempora  nemo praesentium totam repellendus nam earum....<a href="Blog Page/Blog Page/index.html">More</a> </p>
+         
+    </div >
+    <div class="column">
+      <div class="card">
+        <img src="png/meat-fish.jpeg" alt="fish" style="width:100%">
+        <h3>Meat</h3>
+        <p><button><a href ="grocery.html"class="alinkInButton">View More</a></button></p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="png/meat-fish.jpeg" alt="fish" style="width:100%">
+        <h3>Fish</h3>
+        <p><button><a href ="grocery.html" class="alinkInButton">View More</a></button></p>
+       
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="png/meat-fish.jpeg" alt="fish" style="width:100%">
+        <h3>Chicken</h3>
+        <p><button><a href ="grocery.html"class="alinkInButton" >View More</a></button></p>
+       
+      </div>
+    </div>
+      </div>
+      <br><br><br>
+    <!--fruits and vegetable box-->
+      <div > 
+        <div class="row_fv">
+         
+          <div class="column_fv">
+            <div class="card_fv">
+              <img src="home images/10.jpg" alt="fruits" style="width:100%">
+              <h3>fruits</h3>
+              <p><button><a href ="grocery.css"class="alinkInButton">View More</a></button></p>
+            </div>
+          </div>
+        
+          <div class="column_fv">
+            <div class="card_fv">
+              <img src="home images/10.jpg" alt="veges" style="width:100%">
+              <h3>Vegetables</h3>
+              <p><button><a href ="grocery.html" class="alinkInButton">View More</a></button></p>
+             
+            </div>
+          </div>
+          
+          <div class="column_fv">
+            <div class="card_fv">
+              <img src="home images/10.jpg" alt="fruits" style="width:100%">
+              <h3>Dry-fruits & seeds</h3>
+              <p><button><a href ="grocery.html"class="alinkInButton" >View More</a></button></p>
+             
+            </div>
+          </div>
+          <div class="column_fv">
+            
+              <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-decoration: underline;">Fruits&Vegetables</h3>
+              <p style="text-align: justify; word-spacing: 10%; line-height: 2;" >Some text Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero accusantium dolores vero est, provident tenetur asperiores, amet eius tempore, architecto quasi! Dolor repudiandae aliquam numquam nostrum inventore deleniti eligendi...<a href ="Blog Page/Blog Page/index.html"> More</a></p>  
+          </div>
+            </div> 
+            <br><br><br>
+            <!--snacks--> 
+            <div > 
+              <div class="row_s">
+                <div class="column_s">
+                  <br>
+                   <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-decoration: underline;">Snacks & Drinks</h3>
+                   <br>
+                    <p style="text-align: justify; word-spacing: 10%; line-height: 2;"> 
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, nihil consectetur maiores harum blanditiis nulla culpa non , numquam nisi  tempora  nemo praesentium totam repellendus nam earum....<a href="Blog Page/Blog Page/index.html">More</a> </p>
+                     
+                </div >
+                <div class="column_s">
+                  <div class="card_s">
+                    <img src="home images/8.jpg" alt="snacks" style="width:100%">
+                    <h3>Drinks</h3>
+                    <p><button><a href ="grocery.html"class="alinkInButton">View More</a></button></p>
+                  </div>
+                </div>
+              
+                <div class="column_s">
+                  <div class="card_s">
+                    <img src="home images/9.jpg" alt="snacks" style="width:100%">
+                    <h3>Chips</h3>
+                    <p><button><a href ="grocery.html" class="alinkInButton">View More</a></button></p>
+                   
+                  </div>
+                </div>
+                
+                <div class="column_s">
+                  <div class="card_s">
+                    <img src="home images/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg" alt="snacks" style="width:100%">
+                    <h3>Chocolate</h3>
+                    <p><button><a href ="grocery.html"class="alinkInButton" >View More</a></button></p>
+                   
+                  </div>
+                </div>
+                  </div>
+   
+  <br><br><br>
+  <!--dairy& Egg-->
+  <div > 
+    <div class="row_d">
+     
+      <div class="column_d">
+        <div class="card_d">
+          <img src="home images/7.webp" alt="d&e" style="width:100%">
+          <h3>Egg</h3>
+          <p><button><a href ="grocery.html"class="alinkInButton">View More</a></button></p>
+        </div>
+      </div>
+    
+      <div class="column_d">
+        <div class="card_d">
+          <img src="home images/7.webp" alt="d&e" style="width:100%">
+          <h3>Milk</h3>
+          <p><button><a href ="grocery.html" class="alinkInButton">View More</a></button></p>
+         
+        </div>
+      </div>
+      
+      <div class="column_d">
+        <div class="card_d">
+          <img src="home images/7.webp" alt="d&e" style="width:100%">
+          <h3>Cheese</h3>
+          <p><button><a href ="grocery.html"class="alinkInButton" >View More</a></button></p>
+         
+        </div>
+      </div>
+      <div class="column_d">
+        
+          <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-decoration: underline;">Dairy & Eggs</h3>
+          <p style="text-align: justify; word-spacing: 10%; line-height: 2;" >Some text Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero accusantium dolores vero est, provident tenetur asperiores, amet eius tempore, architecto quasi! Dolor repudiandae aliquam numquam nostrum inventore deleniti eligendi...<a href ="Blog Page/Blog Page/index.html"> More</a></p>  
+      </div>
+        </div>
+<br><br><br>
+        <!--Spices ,lentil & Flour-->
+        <div > 
+          <div class="row_lf">
+            <div class="column_lf">
+              <br>
+               <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-decoration: underline;">Spices,lentil &Flour</h3>
+               <br>
+                <p style="text-align: justify; word-spacing: 10%; line-height: 2;"> 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id, nihil consectetur maiores harum blanditiis nulla culpa non , numquam nisi  tempora  nemo praesentium totam repellendus nam earum....<a href="Blog Page/Blog Page/index.html">More</a> </p>
+                 
+            </div >
+            <div class="column_lf">
+              <div class="card_lf">
+                <img src="home images/Different-types-of-spices-of-the-table-apr18.jpg" alt="lf" style="width:100%">
+                <h3>Spices</h3>
+                <p><button><a href ="grocery.html"class="alinkInButton">View More</a></button></p>
+              </div>
+            </div>
+          
+            <div class="column_lf">
+              <div class="card_lf">
+                <img src="home images/immo-wegmann-clUKWRNm27w-unsplash.jpg" alt="lf" style="width:100%">
+                <h3>Flours</h3>
+                <p><button><a href ="grocery.html" class="alinkInButton">View More</a></button></p>
+               
+              </div>
+            </div>
+            
+            <div class="column_lf">
+              <div class="card_lf">
+                <img src="home images/cesar-hernandez-ezcaFWpDKKM-unsplash.jpg" alt="lf" style="width:100%">
+                <h3>Lentils</h3>
+                <p><button><a href ="grocery.html"class="alinkInButton" >View More</a></button></p>
+               
+              </div>
+            </div>
+              </div>
+              <br><br><br>
+  <!-- house necesities-->
+              <div > 
+                <div class="row_d">
+                 
+                  <div class="column_d">
+                    <div class="card_d">
+                      <img src="houseNec/11.jpg" alt="d&e" style="width:100%">
+                      <h3>Cleaning Products</h3>
+                      <p><button><a href ="houseN.html"class="alinkInButton">View More</a></button></p>
+                    </div>
+                  </div>
+                
+                  <div class="column_d">
+                    <div class="card_d">
+                      <img src="houseNec/20.jpg" alt="d&e" style="width:100%">
+                      <h3>Shampoo & Hand soaps</h3>
+                      <p><button><a href ="houseN.html"class="alinkInButton">View More</a></button></p>
+                     
+                    </div>
+                  </div>
+                  
+                  <div class="column_d">
+                    <div class="card_d">
+                      <img src="houseNec/21.jpg" alt="h" style="width:100%">
+                      <h3>towel</h3>
+                      <p><button><a href ="houseN.html"class="alinkInButton" >View More</a></button></p>
+                     
+                    </div>
+                  </div>
+                  <div class="column_d">
+                    
+                      <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-decoration: underline;">House Necessities</h3>
+                      <p style="text-align: justify; word-spacing: 10%; line-height: 2;" >Some text Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero accusantium dolores vero est, provident tenetur asperiores, amet eius tempore, architecto quasi! Dolor repudiandae aliquam numquam nostrum inventore deleniti eligendi...<a href ="houseN.html"> More</a></p>  
+                  </div>
+                    </div>
+            <br><br><br>
+<!--image map-->
+           <div style="background-color: bisque;border-radius: 4px;"> 
+            <h3>Our Location </h3>
+            <img src="home images/11.jpg" alt="Workplace" usemap="#workmap" width="400" height="280">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="map" href="https://goo.gl/maps/yJpJ6NP8a8LKq8818">
+
+  <div class="container">
+    <form id="subscribeForm" action="#" method="post">
+      <div class="input-group">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Subscribe</button></div>
+        
+   
+    </form>
+    <div id="message" class="message"></div>
+  </div>
+
+</div>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var emailInput = document.getElementById('email');
+  var messageContainer = document.getElementById('message');
+  
+  setTimeout(function() {
+    // Clear the input field
+    emailInput.value = ''; 
+    // Display the success message
+    messageContainer.textContent = 'Thanks for subscribing!';
+  }, 1000);
+});</script>
+
+ <footer>
+  <p>&copy; 2023 Food Mart. All rights reserved.</p>
+</footer>
+</body>
+</html>

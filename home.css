@@ -1,0 +1,568 @@
+
+
+header{
+  width: 100%;
+  font-size: x-large;
+  background-color: #90d24f;
+  font-family: 'Times New Roman', Times, serif;
+  height: 15%;
+}
+
+.header img {
+   
+    width: 250px;
+    background-color: #90d24f;
+    
+  }
+  
+  .navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color:#90d24f;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:large;
+    
+  }
+  .navbar a {
+    float:right;
+    font-size: 16px;
+    color: #3e7507;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+  }
+  /* drop down list css*/
+  .dropdown {
+    float:right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn { 
+    border: none;
+    outline: none;
+    color: #37620b;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(239, 232, 232);
+  }
+  .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    float: right;
+  }
+  @media screen and (max-width: 600px) {
+     .search-container {
+      float: right;
+    }}
+    .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;}
+
+      .search-container {
+        float: right;
+      }
+    
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eaf1ed;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(3, 106, 10);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #dddddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+    
+  /*slide show*/
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width :1500px;
+    min-height: fit-content;
+    position: relative;
+    margin: auto;
+  } 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /*meat*/
+  /* Float  columns side by side */
+  .column{
+    float: left;
+    width: 25%;
+    height: 25%;
+    padding: 0 10px;
+    background-color: antiquewhite;
+  }
+  
+
+  .row {
+    display: flex;
+    height: 100%;
+    content: "";
+    display: table;
+    clear: both;
+    background-color: antiquewhite;
+    
+  }
+  /* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%; 
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card  {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.728);
+    padding: 20px;
+    text-align: center;
+    background-color: #f4cdcd;
+    height: 100%;
+
+  }
+  
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #08971e;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: auto;
+  }
+  
+  .card  button:hover {
+    opacity: 0.7;
+  }
+  
+.alinkInButton{
+ 
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: none;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: large;
+}
+/*fruits dic css*/
+/* Float  columns side by side */
+.column_fv {
+  float: left;
+  width: 25%;
+  height: 25%;
+  padding: 0 10px;
+  background-color: rgb(228, 255, 179);
+  
+}
+
+.row_fv {
+  display: flex;
+  height: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  background-color: rgb(228, 255, 179);
+  
+}
+@media screen and (max-width: 992px) {
+  .column_fv {
+    width: 50%;
+  }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column_fv {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card_fv {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.728);
+  padding: 20px;
+  text-align: center;
+  background-color: #96fcb9;
+ height: 10%;
+}
+
+
+.card_fv button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #08971e;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card_fv button:hover {
+  opacity: 0.7;
+}
+
+.alinkInButton{
+
+font-size: 16px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: none;
+text-decoration: none;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: large;}
+
+/*snacks*/
+/* Float  columns side by side */
+.column_s {
+  float: left;
+  width: 25%;
+  height: 25%;
+  padding: 0 10px;
+  background-color:rgb(243, 205, 156) ;
+}
+
+.row_s {
+  display: flex;
+  height: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  background-color: rgb(243, 205, 156);
+  
+}
+/* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+.column_s {
+  width: 50%;
+}
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column_s {
+    width: 100%; 
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card_s {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.728);
+  padding: 20px;
+  text-align: center;
+  background-color: #f6bd81;
+ height: 10%;
+}
+
+
+.card_s button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #08971e;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card_s button:hover {
+  opacity: 0.7;
+}
+
+.alinkInButton{
+
+font-size: 16px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: none;
+text-decoration: none;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: large;
+}
+/*dairy and egg*/
+/* Float  columns side by side */
+.column_d {
+  float: left;
+  width: 25%;
+  height: 25%;
+  padding: 0 10px;
+  background-color: rgb(241, 249, 154);
+  
+}
+
+.row_d {
+  display: flex;
+  height: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  background-color: rgb(241, 249, 154);
+  
+}
+@media screen and (max-width: 992px) {
+  .column_d {
+    width: 50%;
+  }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column_d {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card_d {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.728);
+  padding: 20px;
+  text-align: center;
+  background-color: #f4ff7c;
+ height: 10%;
+}
+
+
+.card_d button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #08971e;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card_d button:hover {
+  opacity: 0.7;
+}
+
+.alinkInButton{
+
+font-size: 16px;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: none;
+text-decoration: none;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: large;}
+
+/*spices*/
+
+  /* Float  columns side by side */
+  .column_lf {
+    float: left;
+    width: 25%;
+    height: 25%;
+    padding: 0 10px;
+    background-color: antiquewhite;
+  } 
+
+  .row_lf {
+    display: flex;
+    height: 100%;
+    content: "";
+    display: table;
+    clear: both;
+    background-color: antiquewhite;
+    
+  }
+  /* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+  .column_lf {
+    width: 50%;
+  }
+}
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+   .column_lf {
+      width: 100%; 
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card_lf  {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.728);
+    padding: 20px;
+    text-align: center;
+    background-color: #f4cdcd;
+   height: 10%;
+  }
+  
+  
+  .card_lf button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #08971e;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card_lf  button:hover {
+    opacity: 0.7;
+  }
+  
+.alinkInButton{
+ 
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: none;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+  footer{
+    border:19px;
+    font-weight: bold;
+    float: center;
+    font-size: medium;
+    background-color: #90d24f;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#f6bd81;
+    border: 1px solid #ffd092;
+    border-radius: 5px;
+    float: right;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color:#f8b670;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    
+
+    

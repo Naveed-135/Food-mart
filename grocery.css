@@ -1,0 +1,130 @@
+body{
+background-image:url(fruit&vege/2.jpg);
+background-repeat: no-repeat ;
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+/*nav bar*/
+
+  
+  .navbar a {
+    float: left;
+    
+    color: rgb(10, 113, 17);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:large;
+  }
+  
+
+.paragraph{
+  background-color: beige;
+  border-radius: 30px;
+  width: 90%;
+  margin: 16px;
+  margin-top: 16px;
+}
+
+marquee{
+  width:"100%";
+ direction:"right";
+  height:"100%";
+  background-color: rgb(178, 240, 140);
+  font-size:20px ;
+  font-weight: bold;
+}
+
+/*slide show*/
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+footer{
+  border:19px;
+  font-weight: bold;
+  float: center;
+  font-size: medium;
+  background-color: rgb(205, 248, 105);
+}
+

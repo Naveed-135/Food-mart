@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*nav bar*/
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  background-color:#90d24f;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size:large;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 50px;
+  color: rgb(10, 113, 17);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+/* drop down list css*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  color: rgb(10, 113, 17);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(239, 232, 232);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eaf1ed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(3, 106, 10);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+  .flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-box-front {
+    background-color: #8ef47c;
+    color: black;
+    font-size:xx-large;
+    text-align: center;
+
+   
+  }
+  
+  .flip-box-back {
+    background-color: rgb(131, 252, 167);
+    color: white;
+    transform: rotateX(180deg);
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .paragraph{
+    background-color: beige;
+    border-radius: 4px;
+    width: 60%;
+    margin-left: 16px ;
+    margin-right: 16px;
+    text-align: justify;
+    
+    }
+
+    .clock{
+   
+      font-style: italic;
+      font-weight: bold;
+      color: #024108;
+      background-color: rgb(25, 173, 33);
+      font-size: xx-large;
+      text-align:center ;
+      
+    }
+
+    footer{
+      border:19px;
+      font-weight: bold;
+      float: center;
+      font-size: medium;
+      background-color: #90d24f;
+    }

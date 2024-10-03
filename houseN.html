@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="houseN.css">
+    <title>house Nassities</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        
+        <a href="home.html">Home</a>
+        <a href="Contact Page/Contact Page/index.html">Contact</a>
+        <a href="Blog Page/Blog Page/index.html">Blog</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Products Catagories 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="grocery.html">Fruits and Vegetables</a>
+            <a href="grocery.html">Dairy and Eggs</a>
+            <a href="grocery.html">Meat and Poultry</a>
+            <a href="grocery.html">Drinks</a>
+            <a href="grocery.html">Snacks</a>
+            <a href="houseN.html">Home Necessities</a>
+            <a href="grocery.html">Spices</a>
+            <a href="grocery.html">Lentil & Flour</a>
+          </div></div>
+
+          
+        </div>
+</header>
+
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>COMING SOON</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>Few Months LEFT</h2>
+    </div>
+  </div>
+</div>
+<div></div>
+<!--clock-->
+<div class="clock"></left>
+  <p id="demo"></p></div>
+
+<script>// Set the date we're counting down to
+  var countDownDate = new Date("july 5, 2023 15:37:25").getTime();
+          
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);</script>
+  <div>
+    
+
+   
+
+    <center><div class="paragraph">
+    <CENTER><u><h1>HOUSE NECESSITIES</h1></u></CENTER><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores culpa hic aspernatur eaque voluptatem, molestiae neque? Repellat vitae culpa rem nostrum. Alias ad quos dolorum sint ipsum exercitationem iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate ipsam in, omnis neque earum maiores reprehenderit tempora, voluptate, odio facere voluptatibus obcaecati ullam. Fuga expedita veniam aspernatur facilis voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum debitis inventore, aliquid modi est iste porro consectetur deserunt facilis numquam vitae tempore tenetur a velit id, repudiandae autem amet expedita.</p></div></div></center>
+    <!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+      <img src="houseNec/3.webp" style="width:100%">
+      <img src="houseNec/4.jpg" style="width:100%">
+      <img src="houseNec/5.jpg" style="width:100%">
+      <img src="houseNec/6.jpg" style="width:100%">
+      <img src="houseNec/7.jpg" style="width:100%">
+      <img src="houseNec/8.jpg" style="width:100%">
+      <img src="houseNec/9.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="houseNec/10.jpg" style="width:100%">
+      <img src="houseNec/11.jpg" style="width:100%">
+      <img src="houseNec/15.jpg" style="width:100%">
+      <img src="houseNec/12.jpg" style="width:100%">
+      <img src="houseNec/13.jpg" style="width:100%">
+      <img src="houseNec/14.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="houseNec/15.jpg" style="width:100%">
+      <img src="houseNec/16.jpg" style="width:100%">
+      <img src="houseNec/17.jpg" style="width:100%">
+      <img src="houseNec/18.jpg" style="width:100%">
+      <img src="houseNec/17.jpg" style="width:100%">
+      <img src="houseNec/18.jpg" style="width:100%">
+      <img src="houseNec/20.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="houseNec/11.jpg" style="width:100%">
+      <img src="houseNec/21.jpg" style="width:100%">
+      <img src="houseNec/5.jpg" style="width:100%">
+      <img src="houseNec/8.jpg" style="width:100%">
+      <img src="houseNec/4.jpg" style="width:100%">
+      <img src="houseNec/20.jpg" style="width:100%">
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Food Mart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
